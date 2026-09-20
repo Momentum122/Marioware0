@@ -11,7 +11,7 @@ func _ready() -> void:
 	if themed_timer_scene:
 		var themed_timer_instance = themed_timer_scene.instantiate()
 		add_child(themed_timer_instance)
-		await themed_timer_instance.Timer(7.0)
+		await themed_timer_instance.Timer(5.0)
 		timer_end = true
 		print("Timer finished!")
 

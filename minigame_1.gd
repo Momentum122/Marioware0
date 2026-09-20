@@ -17,7 +17,7 @@ func _ready() -> void:
 			child.garlic_collected.connect(_on_garlic_collected)
 			print("Connected signal for garlic: ", child.name)
 
-	await get_tree().create_timer(13.0).timeout
+	await get_tree().create_timer(12.0).timeout
 	timer_end = true
 	print("Timer finished!")
 
