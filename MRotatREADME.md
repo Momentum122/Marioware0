@@ -38,13 +38,13 @@ then wait for some time and the game should start automatically.
 OR
 i) Open itch.io
 ii) Search Mrotat 
-iii) click on the first game that apears with its creator being momentum122
+iii) click on the first game that appears with its creator being momentum122
 iv) Click on run game button and then wait for some time and the game should start automatically.
 How to play each minigame:- 
 For Heart Collector minigame :- 
 i) When the Game starts a menu screen should open up.
 ii) Click on "Start Game 
-              Mingame 1
+              Minigame 1
            collect Garlics"
 iii) Now the game should open up.
 iv) Now you have only 12 seconds to complete it .
@@ -59,7 +59,7 @@ And to jump press spacebar (there is no double jump).
 For Godot Icon Clicker :-
 
 i) Click on "Start Game 
-              Mingame 2
+              Minigame 2
            Click Buttons"
 ii) The Game should open up.
 iii) To complete it click all the 4 button within 5 seconds .
@@ -68,7 +68,7 @@ v) If you don't Game Over Screen will open up.
 Vi) From both the ending you can go back to the Main menu
 
 
-Acknowledsgements :- 
+Acknowledgements :- 
 i) Usage of Ai for Debugging / understanding features of GODOT
 ii) All images / resources are not owned by me . 
 iii) Not my idea .
