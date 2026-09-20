@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b18ecy0t2ob5d"]
+
+[ext_resource type="Script" uid="uid://xsas8jhbowal" path="res://Scenes/done_screen.gd" id="1_3rr80"]
+[ext_resource type="Texture2D" uid="uid://k78nypw0jgsv" path="res://Screenshot from 2026-09-20 12-04-22.png" id="2_1q1k2"]
+[ext_resource type="Script" uid="uid://cfjnh837fh1jn" path="res://Scenes/pa.gd" id="3_8rpo2"]
+[ext_resource type="Script" uid="uid://dwh8uqnu6al50" path="res://Scenes/mm.gd" id="4_5u8ma"]
+
+[node name="donescreen" type="Node2D" unique_id=1685733297]
+script = ExtResource("1_3rr80")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=375738578]
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("2_1q1k2")
+
+[node name="Label" type="Label" parent="." unique_id=952794006]
+offset_left = 196.0
+offset_top = -38.0
+offset_right = 951.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0.73924494, 0.3692658, 1)
+theme_override_font_sizes/font_size = 144
+text = "YOU WIN!!!"
+
+[node name="Button" type="Button" parent="." unique_id=466383298]
+offset_left = 338.0
+offset_top = 513.0
+offset_right = 808.0
+offset_bottom = 612.0
+theme_override_colors/font_color = Color(0.8696456, 0.9108559, 0.5517427, 1)
+theme_override_font_sizes/font_size = 144
+script = ExtResource("3_8rpo2")
+
+[node name="Button2" type="Button" parent="." unique_id=1960042312]
+offset_left = 345.0
+offset_top = 379.0
+offset_right = 807.0
+offset_bottom = 488.0
+script = ExtResource("4_5u8ma")

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b2a38aka6ukxk"]
+
+[ext_resource type="Script" uid="uid://cfs4cif16hwrk" path="res://Scenes/deathscreen.gd" id="1_3anfm"]
+[ext_resource type="Texture2D" uid="uid://y8pkkotv6wtl" path="res://images.jpeg" id="2_nj0ii"]
+[ext_resource type="Script" uid="uid://begmi8tkpnay1" path="res://Scenes/button_2.gd" id="3_avh6a"]
+[ext_resource type="Script" uid="uid://dg2jrc6d01jof" path="res://Scenes/button.gd" id="4_qnoyp"]
+
+[node name="Control" type="Node2D" unique_id=1956268361]
+script = ExtResource("1_3anfm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=281895233]
+offset_right = 1154.0
+offset_bottom = 645.0
+texture = ExtResource("2_nj0ii")
+
+[node name="Label" type="Label" parent="." unique_id=1332906767]
+offset_left = 417.0
+offset_top = 47.0
+offset_right = 800.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.2231029, 0.2231029, 0.22310287, 1)
+theme_override_font_sizes/font_size = 64
+text = "GAME OVER "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=635189572]
+offset_left = 483.0
+offset_top = 252.0
+offset_right = 666.0
+offset_bottom = 535.0
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=144327232]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.56379807, 0.9722226, 0.80139196, 1)
+theme_override_font_sizes/font_size = 32
+text = "Main menu"
+script = ExtResource("3_avh6a")
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1051257689]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.71642643, 0.9409091, 0.76035553, 1)
+theme_override_font_sizes/font_size = 32
+text = "Play again "
+script = ExtResource("4_qnoyp")

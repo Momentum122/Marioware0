@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://jnvkjc7cs1pt"]
+
+[ext_resource type="Texture2D" uid="uid://ltauh3bfbj25" path="res://mainscreenbackground.png" id="1_2bexd"]
+[ext_resource type="Script" uid="uid://iid5gwnfurfj" path="res://leve_screen.gd" id="1_ux7w3"]
+[ext_resource type="Texture2D" uid="uid://cp27p45xjs6rq" path="res://addons/godot_super-wakatime/Heart-removebg-preview.png" id="2_2bexd"]
+
+[node name="Node2D" type="Node2D" unique_id=1561061745]
+script = ExtResource("1_ux7w3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1996409553]
+offset_left = 1.0
+offset_right = 1154.0
+offset_bottom = 651.0
+texture = ExtResource("1_2bexd")
+expand_mode = 1
+
+[node name="Garlic Container" type="HBoxContainer" parent="." unique_id=851349744]
+offset_left = 422.0
+offset_top = 68.0
+offset_right = 2101.0
+offset_bottom = 515.0
+
+[node name="Garlic1" type="TextureRect" parent="Garlic Container" unique_id=468917986]
+custom_minimum_size = Vector2(100, 64)
+custom_maximum_size = Vector2(-1, 100)
+layout_mode = 2
+texture = ExtResource("2_2bexd")
+expand_mode = 1
+
+[node name="Garlic2" type="TextureRect" parent="Garlic Container" unique_id=1204790066]
+custom_minimum_size = Vector2(100, 64)
+custom_maximum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_2bexd")
+expand_mode = 1
+
+[node name="Garlic3" type="TextureRect" parent="Garlic Container" unique_id=454425606]
+custom_minimum_size = Vector2(100, 64)
+custom_maximum_size = Vector2(-1, 100)
+layout_mode = 2
+texture = ExtResource("2_2bexd")
+expand_mode = 1
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=267150036]
+offset_left = 511.0
+offset_top = 252.0
+offset_right = 744.0
+offset_bottom = 328.0
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level#"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1477194244]
+offset_left = 559.0
+offset_top = 354.0
+offset_right = 669.0
+offset_bottom = 447.0
+theme_override_colors/default_color = Color(0.23931575, 0.20699528, 0.737357, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

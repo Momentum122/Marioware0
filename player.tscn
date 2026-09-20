@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d0eqjnhqb1hdb"]
+
+[ext_resource type="Script" uid="uid://b4xhb42palw8w" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://d2fruqkw15j5" path="res://addons/godot_super-wakatime/wario1-removebg-preview.png" id="2_i3pqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gi7k6"]
+size = Vector2(40.25, 70.75)
+
+[node name="Player" type="CharacterBody2D" unique_id=593156265]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1659818171]
+position = Vector2(372.5, 388)
+scale = Vector2(0.14411762, 0.18139529)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853536195]
+position = Vector2(373.875, 388.625)
+shape = SubResource("RectangleShape2D_gi7k6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=664999639]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=711675591]
+position = Vector2(374, 388)
+shape = SubResource("RectangleShape2D_gi7k6")
