@@ -4,7 +4,7 @@ var garlic_collected: int = 0
 var timer_end: bool = false 
 var game_over: bool = false
 
-# Move the callback function above _ready so Godot recognizes the identifier
+
 func _on_garlic_collected() -> void:
 	garlic_collected += 1
 	print("Garlic collected! Total count is now: ", garlic_collected)
@@ -12,13 +12,11 @@ func _on_garlic_collected() -> void:
 func _ready() -> void:
 	print("Minigame Started!")
 	
-	# Connect signals from all children that are Garlics
 	for child in get_children():
 		if child.has_signal("garlic_collected"):
 			child.garlic_collected.connect(_on_garlic_collected)
 			print("Connected signal for garlic: ", child.name)
 
-	# Start 13 second timer
 	await get_tree().create_timer(13.0).timeout
 	timer_end = true
 	print("Timer finished!")
@@ -26,8 +24,6 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if game_over:
 		return
-		
-	# Win Condition
 	if garlic_collected >= 3:
 		game_over = true
 		print("WIN! Changing scene...")
@@ -38,7 +34,6 @@ func _process(_delta: float) -> void:
 		else:
 			get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
 			
-	# Loss Condition
 	elif timer_end:
 		game_over = true
 		print("LOSE! Time ran out...")

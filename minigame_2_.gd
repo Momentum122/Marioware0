@@ -26,7 +26,7 @@ func _process(_delta: float) -> void:
 		if Global.minigames_done > 3:
 			get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
 		else:
-			get_tree().change_scene_to_file("res://Scenes/deathscreen.tscn")
+			get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
 			
 	elif timer_end:
 		scene_changing = true

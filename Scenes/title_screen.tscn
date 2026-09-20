@@ -37,7 +37,7 @@ theme_override_font_sizes/font_size = 35
 text = "Quit "
 script = ExtResource("2_p3fck")
 
-[node name="Start Button" type="Button" parent="." unique_id=757834467]
+[node name="Start_Button" type="Button" parent="." unique_id=757834467]
 layout_mode = 0
 offset_left = 374.0
 offset_top = 227.0
@@ -49,7 +49,7 @@ text = "Start Game
 Mingame 1
 collect Garlics"
 
-[node name="Start Button2" type="Button" parent="." unique_id=292842676]
+[node name="Start_Button2" type="Button" parent="." unique_id=292842676]
 layout_mode = 0
 offset_left = 618.0
 offset_top = 226.0
@@ -62,5 +62,5 @@ Mingame 2
 click buttons "
 
 [connection signal="pressed" from="VBoxContainer/Quit Button" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Start Button2" to="." method="_on_start_button_2_pressed"]
+[connection signal="pressed" from="Start_Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Start_Button2" to="." method="_on_start_button_2_pressed"]
